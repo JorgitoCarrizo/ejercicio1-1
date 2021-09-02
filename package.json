@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "heroku-postbuild": "ng build --prod",
-    
+    "postinstall": "ng build --output-path angularapp --aot --prod",
     "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -41,7 +40,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typedoc": "0.16.11",
+    "typedoc": "0.18.0",
     "typescript": "3.4.5"
     },
   "engines": {
