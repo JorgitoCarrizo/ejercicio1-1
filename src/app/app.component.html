@@ -1,0 +1,11 @@
+<h4>Ingrese primera edad</h4>
+<input placeholder="edad uno" id="EdadUno" type="number" [(ngModel)]="numero1">
+
+<h4>Ingrese segunda edad</h4>
+<input placeholder="edad dos" id="EdadDos" type="number" [(ngModel)]="numero2">
+<br>
+<br>
+<input type="button" value="calcular" (click)=calcular()>
+<input type="text" id="resultado" [(ngModel)]="rta">
+<br>
+<input type="button" value="Limpiar cuadro de textos" (click)=limpiar()>
